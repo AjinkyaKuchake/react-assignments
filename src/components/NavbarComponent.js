@@ -6,8 +6,11 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Logout from "@mui/icons-material/Logout";
+import { useDispatch } from "react-redux";
+import { logOut } from "../redux/actions/Actions";
 
 const NavbarComponent = () => {
+  const dispatch = useDispatch();
   return (
     <>
       <AppBar position="static">
@@ -17,6 +20,7 @@ const NavbarComponent = () => {
             size="large"
             edge="start"
             color="inherit"
+            href="/"
           >
             <ConnectingAirportsIcon fontSize="large" />
           </IconButton>
@@ -24,10 +28,10 @@ const NavbarComponent = () => {
             INFLIGHT
           </Typography>
           <Stack direction="row" spacing={2}>
-            <Button color="inherit">Features</Button>
-            <Button color="inherit">Pricing</Button>
-            <Button color="inherit">About</Button>
-            <Button color="inherit" variant="outlined" endIcon={<Logout/>}>Log Out</Button>
+            <Button color="inherit" href="/features">Features</Button>
+            <Button color="inherit" href="/pricing">Pricing</Button>
+            <Button color="inherit" href="/about">About</Button>
+            <Button color="inherit" variant="outlined" endIcon={<Logout />} href="/login">Log Out</Button>
           </Stack>
         </Toolbar>
       </AppBar>

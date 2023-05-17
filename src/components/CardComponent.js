@@ -14,11 +14,11 @@ const CardComponent = () => {
           <CardMedia component="img" height="140" image="https://source.unsplash.com/random" alt="Flight Image" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              React
+              My Trip
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+              info about trips info about trips info about trips info about trips
+              info about trips info about trips info about trips info about trips
             </Typography>
           </CardContent>
           <CardActions>
